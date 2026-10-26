@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <title>NIM_Soal1</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+
+<body>
+    <form>
+        <div class="form-group">
+            <label>Nama</label>
+            <input type="text" class="form-control" id="nama" readonly>
+        </div>
+        <div class="form-group">
+            <label>NIM</label>
+            <input type="text" class="form-control" id="nim" readonly>
+        </div>
+    </form>
+
+    <script>
+        let nama = prompt("Masukkan nama kamu:");
+        let nim = prompt("Masukkan nim kamu:");
+
+        document.getElementById("nama").value = nama || "";
+        document.getElementById("nim").value = nim || "";
+    </script>
+</body>
+
+</html>
